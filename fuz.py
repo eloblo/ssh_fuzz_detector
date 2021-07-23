@@ -24,7 +24,7 @@ def read_log(filename):
     return not (error_count >= max_count)
         
 #detect if there is fuzzing to port 22
-def dectector():
+def detector():
     filename = "/var/log/auth.log"   #log file with info on ssh traffic (if there is traffic)
     sleep_time = 1   #sleep time to refresh logs file
     search = True    #search flag, on when searching for fuzzing
